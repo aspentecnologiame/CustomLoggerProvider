@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CustomLoggerProvider.Domain\CustomLoggerProvider.Domain.csproj" />
+    <ProjectReference Include="..\CustomLoggerProvider.Infra.Logging\CustomLoggerProvider.Infra.Logging.csproj" />
+    <ProjectReference Include="..\CustomLoggerProvider.Infra.SqlServer\CustomLoggerProvider.Infra.SqlServer.csproj" />
+  </ItemGroup>
+
+</Project>
